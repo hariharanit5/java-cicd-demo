@@ -9,7 +9,24 @@
     <artifactId>java-maven-demo</artifactId>
     <version>1.0</version>
 
+    <!-- IMPORTANT -->
+    <packaging>war</packaging>
+
+    <dependencies>
+
+        <!-- Servlet API for Tomcat -->
+        <dependency>
+            <groupId>jakarta.servlet</groupId>
+            <artifactId>jakarta.servlet-api</artifactId>
+            <version>6.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
     <build>
+        <finalName>java-maven-demo</finalName>
+
         <plugins>
 
             <plugin>
